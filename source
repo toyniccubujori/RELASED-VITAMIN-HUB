@@ -1,0 +1,612 @@
+local kavoUi = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+
+local window = kavoUi.CreateLib("Vitamin HUB","Synapse")
+
+---Tabs
+
+local Tab1 = window:NewTab("Basic")
+
+local Tab1Section = Tab1:NewSection("Basic Scripts")
+
+local Tab2 = window:NewTab("Bypasses")
+
+local Tab2Section = Tab2:NewSection("Bypass")
+
+local Tab3 = window:NewTab("Credits")
+
+local Tab3Section = Tab3:NewSection("Created by toyniccubujori")
+
+local Tab3Section = Tab3:NewSection("Version 0.0.1 Alpha")
+
+local Tab3Section = Tab3:NewSection("This script is on testing and it may be removed!")
+
+local Tab4 = window:NewTab("ESP")
+
+local Tab4Section = Tab4:NewSection("Tracks any object from Workspace")
+local Tab5 = window:NewTab("Plush")
+
+local Tab5Section = Tab5:NewSection("Gives Plush :D")
+
+local Tab6 = window:NewTab("Other scripts.")
+
+local Tab6Section = Tab6:NewSection("THIS OP SCRIPTS TAB AREN'T MINE.")
+
+local Tab7 = window:NewTab("Destroy")
+
+local Tab7Section = Tab7:NewSection("Destroy entity")
+
+local Tab8 = window:NewTab("POV")
+
+local Tab8Section = Tab8:NewSection("POINT OF VIEW AN ENTITY (Must use fixcam on infinite yield to work!")
+---Buttons
+
+Tab8Section:NewButton("Figure[50]","Figure POV",function()
+game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace.CurrentRooms[50].FigureSetup.FigureRagdoll.Head.CFrame end)
+    local Fov = 45 Camera = workspace.CurrentCamera Camera.FieldOfView = Fov
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+end)
+
+Tab6Section:NewButton("poop doors",".",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/zoophiliaphobic/POOPDOORS/main/script.lua'))()
+end)
+
+Tab6Section:NewButton("King HUB",".",function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/R8QMbhzv')))()
+end)
+
+Tab6Section:NewButton("Infinite Yield",".",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+end)
+
+Tab5Section:NewButton("Screech","???",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/OfficerMesh/DoorsScreechPlushie/main/script"))()
+end)
+
+Tab4Section:NewButton("GoldPile","GoldPile",function()
+local function findKey(model)
+    for _, child in pairs(model:GetChildren()) do
+        if child.Name == "GoldPile" then
+            local a = Instance.new("BillboardGui",child)
+            a.Name = "A"
+            a.Size = UDim2.new(1,0,1,0)
+            a.AlwaysOnTop = true
+            local b = Instance.new("TextLabel",a)
+            b.Text = "GoldPile"
+            b.BackgroundTransparency = 1
+            b.BorderSizePixel = 0
+            b.Size = UDim2.new(1,0,1,0)
+            b.TextColor3 = Color3.new(0,0,255)
+            b.TextSize = 10
+        end
+        findKey(child)
+    end
+end
+
+while true do
+findKey(game:GetService("Workspace"))
+wait(5)
+end
+end)
+
+Tab4Section:NewButton("Fake Door ESP","Track Fake Doors",function()
+local function findKey(model)
+    for _, child in pairs(model:GetChildren()) do
+        if child.Name == "DoorFake" then
+            local a = Instance.new("BillboardGui",child)
+            a.Name = "A"
+            a.Size = UDim2.new(1,0,1,0)
+            a.AlwaysOnTop = true
+            local b = Instance.new("TextLabel",a)
+            b.Text = "DoorFake"
+            b.BackgroundTransparency = 1
+            b.BorderSizePixel = 0
+            b.Size = UDim2.new(1,0,1,0)
+            b.TextColor3 = Color3.new(0,0,255)
+            b.TextSize = 10
+        end
+        findKey(child)
+    end
+end
+
+while true do
+findKey(game:GetService("Workspace"))
+wait(5)
+end
+end)
+
+Tab4Section:NewButton("Players ESP","Track Players",function()
+local players = game.Players:GetPlayers() for i,v in pairs(players) do local esp = Instance.new("Highlight") esp.Name = v.Name esp.FillTransparency = 0 esp.FillColor = Color3.new(205, 98, 152) esp.OutlineColor = Color3.new(205, 98, 152) esp.OutlineTransparency = 0 esp.Parent = v.Character end
+  end)
+Tab4Section:NewButton("Key ESP","Key Tracker",function()
+local function findKey(model)
+    for _, child in pairs(model:GetChildren()) do
+        if child.Name == "Key" then
+            local a = Instance.new("BillboardGui",child)
+            a.Name = "A"
+            a.Size = UDim2.new(1,0,1,0)
+            a.AlwaysOnTop = true
+            local b = Instance.new("TextLabel",a)
+            b.Text = "Key"
+            b.BackgroundTransparency = 1
+            b.BorderSizePixel = 0
+            b.Size = UDim2.new(1,0,1,0)
+            b.TextColor3 = Color3.new(255,0,0)
+            b.TextSize = 10
+        end
+        findKey(child)
+    end
+end
+
+while true do
+findKey(game:GetService("Workspace"))
+wait(5)
+end
+end)
+
+Tab4Section:NewButton("Door ESP","Track Door",function()
+local function findKey(model)
+    for _, child in pairs(model:GetChildren()) do
+        if child.Name == "Door" then
+            local a = Instance.new("BillboardGui",child)
+            a.Name = "A"
+            a.Size = UDim2.new(1,0,1,0)
+            a.AlwaysOnTop = true
+            local b = Instance.new("TextLabel",a)
+            b.Text = "Door"
+            b.BackgroundTransparency = 1
+            b.BorderSizePixel = 0
+            b.Size = UDim2.new(1,0,1,0)
+            b.TextColor3 = Color3.new(0,255,0)
+            b.TextSize = 10
+        end
+        findKey(child)
+    end
+end
+
+while true do
+findKey(game:GetService("Workspace"))
+wait(5)
+end
+end)
+Tab1Section:NewButton("Bypass revive limit/revive at door 90+ (U still need have revives)","Revive",function()
+game.ReplicatedStorage.EntityInfo.Revive:FireServer()
+end)
+
+Tab1Section:NewButton("Rejoin","Rejoin the server",function()
+-- rejoin		
+local TeleportService = game:GetService("TeleportService")
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+
+local Rejoin = coroutine.create(function()
+    local Success, ErrorMessage = pcall(function()
+        TeleportService:Teleport(game.PlaceId, LocalPlayer)
+    end)
+
+    if ErrorMessage and not Success then
+        warn(ErrorMessage)
+    end
+end)
+
+coroutine.resume(Rejoin)
+game.Players.LocalPlayer:Kick("Secure Rejoin!")
+end)
+
+Tab1Section:NewButton("Normal Speed","16",function()
+
+Game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+
+end)
+
+Tab1Section:NewButton("24 Speed","24",function()
+
+Game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 24
+
+end)
+
+Tab1Section:NewButton("32 Speed","32",function()
+
+Game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 32
+
+end)
+
+Tab1Section:NewButton("64 Speed","64",function()
+
+Game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 64
+
+end)
+
+Tab1Section:NewButton("100 Speed","100",function()
+
+Game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+
+end)
+
+Tab1Section:NewButton("Kill","Sets Health to 0",function()
+
+Game.Players.LocalPlayer.Character.Humanoid.Health = 0
+
+end)
+
+Tab1Section:NewButton("FullBright","Full Bright",function()
+
+	local lighting = game:GetService("Lighting");	lighting.Ambient = Color3.fromRGB(255, 255, 255);
+
+	lighting.Brightness = 1;
+
+	lighting.FogEnd = 1e10;
+
+	for i, v in pairs(lighting:GetDescendants()) do
+
+		if v:IsA("BloomEffect") or v:IsA("BlurEffect") or v:IsA("ColorCorrectionEffect") or v:IsA("SunRaysEffect") then
+
+			v.Enabled = false;
+
+		end;
+
+	end;
+
+	lighting.Changed:Connect(function()
+
+		lighting.Ambient = Color3.fromRGB(255, 255, 255);
+
+		lighting.Brightness = 1;
+
+		lighting.FogEnd = 1e10;
+
+	end);
+
+	spawn(function()
+
+		local character = game:GetService("Players").LocalPlayer.Character;
+
+		while wait() do
+
+			repeat wait() until character ~= nil;
+
+			if not character.HumanoidRootPart:FindFirstChildWhichIsA("PointLight") then
+
+				local headlight = Instance.new("PointLight", character.HumanoidRootPart);
+
+				headlight.Brightness = 1;
+
+				headlight.Range = 9999;
+
+			end;
+
+		end;
+
+	end);
+
+end)
+
+Tab1Section:NewButton("Leave","Kicks you",function()
+
+Game.Players.LocalPlayer:Kick("PlayerService requested dissconect")
+
+end)
+
+Tab1Section:NewButton("Spawn Timothy(T)","???",function()
+local a = game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game
+require(a.RemoteListener.Modules.SpiderJumpscare)(require(a), workspace.CurrentRooms["0"].Assets.Dresser.DrawerContainer, 0.2)
+
+end)
+
+Tab1Section:NewButton("Spawn Screech (Q)","???",function()
+
+local UIS=game:GetService'UserInputService'
+
+getgenv().KeyBind="Q"
+
+ 
+
+UIS.InputBegan:Connect(function(Key)
+
+     if Key.KeyCode==Enum.KeyCode[getgenv().KeyBind] and not UIS:GetFocusedTextBox() then
+
+          require(game.StarterGui.MainUI.Initiator.Main_Game.RemoteListener.Modules.Screech)(require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game),
+
+workspace.CurrentRooms[game.Players.LocalPlayer:GetAttribute("CurrentRoom")])
+
+     end
+
+end)
+
+end)
+
+Tab1Section:NewButton("Btools","Gives Btools",function()
+
+a = Instance.new("HopperBin", game.Players.LocalPlayer.Backpack)
+
+a.BinType = 2
+
+b = Instance.new("HopperBin", game.Players.LocalPlayer.Backpack)
+
+b.BinType = 3
+
+c = Instance.new("HopperBin", game.Players.LocalPlayer.Backpack)
+
+c.BinType = 4
+
+end)
+
+Tab1Section:NewButton("Enable Inventory","Enables Inventory To Bypass Anti Btools",function()
+
+local remote = NLS ([==[
+
+print("Camera Has Been Fixed")
+
+while wait() do
+
+game:GetService("Workspace").CurrentCamera.CameraSubject = owner.Character.Head
+
+]==], owner.Character):WaitForChild 'ServerRemote';
+
+mouse = owner:GetMouse ();
+
+end) 
+
+Tab2Section:NewButton("AntiCheat Bypass","Bypasses the Anti Cheat",function()
+
+Game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
+
+wait(5)
+
+Game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+
+wait(0.1)
+local c = game.Players.LocalPlayer.Character
+local h2 = c.Humanoid:Clone()
+c.Humanoid:Destroy()
+h2.Parent = c
+
+end)local kavoUi = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+
+local window = kavoUi.CreateLib("Vitamin HUB","Synapse")
+
+---Tabs
+
+local Tab1 = window:NewTab("Basic")
+
+local Tab1Section = Tab1:NewSection("Basic Scripts")
+
+local Tab2 = window:NewTab("Bypasses")
+
+local Tab2Section = Tab2:NewSection("Bypass")
+
+local Tab3 = window:NewTab("Credits")
+
+local Tab3Section = Tab3:NewSection("Created by toyniccubujori")
+
+local Tab3Section = Tab3:NewSection("Version 0.0.1 Alpha")
+
+local Tab3Section = Tab3:NewSection("This script is on testing and it may be removed!")
+
+local Tab4 = window:NewTab("ESP")
+
+local Tab4Section = Tab4:NewSection("Tracks any object from Workspace")
+local Tab5 = window:NewTab("Plush")
+
+local Tab5Section = Tab5:NewSection("Gives Plush :D")
+
+local Tab6 = window:NewTab("Other scripts.")
+
+local Tab6Section = Tab6:NewSection("THIS OP SCRIPTS TAB AREN'T MINE.")
+
+local Tab7 = window:NewTab("Destroy")
+
+local Tab7Section = Tab7:NewSection("Destroy entity")
+---Buttons
+
+Tab6Section:NewButton("poop doors",".",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/zoophiliaphobic/POOPDOORS/main/script.lua'))()
+end)
+
+Tab6Section:NewButton("King HUB",".",function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/R8QMbhzv')))()
+end)
+
+Tab6Section:NewButton("Infinite Yield",".",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+end)
+
+Tab5Section:NewButton("Screech","???",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/OfficerMesh/DoorsScreechPlushie/main/script"))()
+end)
+
+Tab4Section:NewButton("Players ESP","Track Players",function()
+local players = game.Players:GetPlayers() for i,v in pairs(players) do local esp = Instance.new("Highlight") esp.Name = v.Name esp.FillTransparency = 0 esp.FillColor = Color3.new(205, 98, 152) esp.OutlineColor = Color3.new(205, 98, 152) esp.OutlineTransparency = 0 esp.Parent = v.Character end
+  end)
+Tab1Section:NewButton("Bypass revive limit/revive at door 90+ (U still need have revives)","Revive",function()
+game.ReplicatedStorage.EntityInfo.Revive:FireServer()
+end)
+
+Tab1Section:NewButton("Rejoin","Rejoin the server",function()
+-- rejoin		
+local TeleportService = game:GetService("TeleportService")
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+
+local Rejoin = coroutine.create(function()
+    local Success, ErrorMessage = pcall(function()
+        TeleportService:Teleport(game.PlaceId, LocalPlayer)
+    end)
+
+    if ErrorMessage and not Success then
+        warn(ErrorMessage)
+    end
+end)
+
+coroutine.resume(Rejoin)
+game.Players.LocalPlayer:Kick("Secure Rejoin!")
+end)
+
+Tab1Section:NewButton("Normal Speed","16",function()
+
+Game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+
+end)
+
+Tab1Section:NewButton("24 Speed","24",function()
+
+Game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 24
+
+end)
+
+Tab1Section:NewButton("32 Speed","32",function()
+
+Game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 32
+
+end)
+
+Tab1Section:NewButton("64 Speed","64",function()
+
+Game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 64
+
+end)
+
+Tab1Section:NewButton("100 Speed","100",function()
+
+Game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+
+end)
+
+Tab1Section:NewButton("Kill","Sets Health to 0",function()
+
+Game.Players.LocalPlayer.Character.Humanoid.Health = 0
+
+end)
+
+Tab1Section:NewButton("FullBright","Full Bright",function()
+
+	local lighting = game:GetService("Lighting");	lighting.Ambient = Color3.fromRGB(255, 255, 255);
+
+	lighting.Brightness = 1;
+
+	lighting.FogEnd = 1e10;
+
+	for i, v in pairs(lighting:GetDescendants()) do
+
+		if v:IsA("BloomEffect") or v:IsA("BlurEffect") or v:IsA("ColorCorrectionEffect") or v:IsA("SunRaysEffect") then
+
+			v.Enabled = false;
+
+		end;
+
+	end;
+
+	lighting.Changed:Connect(function()
+
+		lighting.Ambient = Color3.fromRGB(255, 255, 255);
+
+		lighting.Brightness = 1;
+
+		lighting.FogEnd = 1e10;
+
+	end);
+
+	spawn(function()
+
+		local character = game:GetService("Players").LocalPlayer.Character;
+
+		while wait() do
+
+			repeat wait() until character ~= nil;
+
+			if not character.HumanoidRootPart:FindFirstChildWhichIsA("PointLight") then
+
+				local headlight = Instance.new("PointLight", character.HumanoidRootPart);
+
+				headlight.Brightness = 1;
+
+				headlight.Range = 9999;
+
+			end;
+
+		end;
+
+	end);
+
+end)
+
+Tab1Section:NewButton("Leave","Kicks you",function()
+
+Game.Players.LocalPlayer:Kick("PlayerService requested dissconect")
+
+end)
+
+Tab1Section:NewButton("Spawn Timothy(T)","???",function()
+local a = game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game
+require(a.RemoteListener.Modules.SpiderJumpscare)(require(a), workspace.CurrentRooms["0"].Assets.Dresser.DrawerContainer, 0.2)
+
+end)
+
+Tab1Section:NewButton("Spawn Screech (Q)","???",function()
+
+local UIS=game:GetService'UserInputService'
+
+getgenv().KeyBind="Q"
+
+ 
+
+UIS.InputBegan:Connect(function(Key)
+
+     if Key.KeyCode==Enum.KeyCode[getgenv().KeyBind] and not UIS:GetFocusedTextBox() then
+
+          require(game.StarterGui.MainUI.Initiator.Main_Game.RemoteListener.Modules.Screech)(require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game),
+
+workspace.CurrentRooms[game.Players.LocalPlayer:GetAttribute("CurrentRoom")])
+
+     end
+
+end)
+
+end)
+
+Tab1Section:NewButton("Btools","Gives Btools",function()
+
+a = Instance.new("HopperBin", game.Players.LocalPlayer.Backpack)
+
+a.BinType = 2
+
+b = Instance.new("HopperBin", game.Players.LocalPlayer.Backpack)
+
+b.BinType = 3
+
+c = Instance.new("HopperBin", game.Players.LocalPlayer.Backpack)
+
+c.BinType = 4
+
+end)
+
+Tab1Section:NewButton("Enable Inventory","Enables Inventory To Bypass Anti Btools",function()
+
+local remote = NLS ([==[
+
+print("Camera Has Been Fixed")
+
+while wait() do
+
+game:GetService("Workspace").CurrentCamera.CameraSubject = owner.Character.Head
+
+]==], owner.Character):WaitForChild 'ServerRemote';
+
+mouse = owner:GetMouse ();
+
+end) 
+
+Tab2Section:NewButton("AntiCheat Bypass","Bypasses the Anti Cheat",function()
+
+Game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
+
+wait(5)
+
+Game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+
+wait(0.1)
+local c = game.Players.LocalPlayer.Character
+local h2 = c.Humanoid:Clone()
+c.Humanoid:Destroy()
+h2.Parent = c
+
+end)
