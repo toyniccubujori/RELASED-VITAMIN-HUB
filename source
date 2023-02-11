@@ -18,6 +18,8 @@ local Tab3Section = Tab3:NewSection("Created by toyniccubujori")
 
 local Tab3Section = Tab3:NewSection("Version 0.0.1 Alpha")
 
+local Tab3Section = Tab3:NewSection("ESP made by octacore#9990")
+
 local Tab3Section = Tab3:NewSection("This script is on testing and it may be removed!")
 
 local Tab4 = window:NewTab("ESP")
