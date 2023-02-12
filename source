@@ -52,7 +52,7 @@ Tab8Section:NewButton("Figure[100]","Figure POV",function()
 game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace.CurrentRooms[100].FigureSetup.FigureRagdoll.Head.CFrame
 end)
 local Fov = 43 Camera = workspace.CurrentCamera Camera.FieldOfView = Fov
-end)
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 end)
 
