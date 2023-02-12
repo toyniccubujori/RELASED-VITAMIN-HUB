@@ -44,10 +44,21 @@ local Tab8Section = Tab8:NewSection("POINT OF VIEW AN ENTITY (Must use fixcam on
 
 Tab8Section:NewButton("Figure[50]","Figure POV",function()
 game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace.CurrentRooms[50].FigureSetup.FigureRagdoll.Head.CFrame end)
-    local Fov = 45 Camera = workspace.CurrentCamera Camera.FieldOfView = Fov
+    local Fov = 43 Camera = workspace.CurrentCamera Camera.FieldOfView = Fov
 loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 end)
 
+Tab8Section:NewButton("Figure[100]","Figure POV",function()
+game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace.CurrentRooms[100].FigureSetup.FigureRagdoll.Head.CFrame
+end)
+local Fov = 43 Camera = workspace.CurrentCamera Camera.FieldOfView = Fov
+end)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+end)
+
+Tab6Section:NewButton("PoopDoors V2","???",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/mstudio45/poopdoors_edited/main/poopdoors_edited.lua'),true))()
+end)
 Tab6Section:NewButton("poop doors",".",function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/zoophiliaphobic/POOPDOORS/main/script.lua'))()
 end)
