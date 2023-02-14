@@ -40,8 +40,68 @@ local Tab7Section = Tab7:NewSection("Destroy entity")
 local Tab8 = window:NewTab("POV")
 
 local Tab8Section = Tab8:NewSection("POINT OF VIEW AN ENTITY (Must use fixcam on infinite yield to work!")
+local Tab9 = window:NewTab("Troll")
+
+local Tab9Section = Tab8:NewSection("TROLL PEOPLE (VISIBLE TO ALL) ")
 ---Buttons
 
+Tab9Section:NewButton("INFINITE JACK (NOT BY ME)","Visible to all",function()
+-- inf jack(use Anticheat Bypass)
+
+Instance.new("Highlight", game.Workspace.CurrentRooms[game:GetService("ReplicatedStorage").GameData.LatestRoom.Value].Assets["Wardrobe"])
+
+local InfJack1 = game:GetService("RunService").RenderStepped:Connect(function()
+
+    fireproximityprompt(game.Workspace.CurrentRooms[game:GetService("ReplicatedStorage").GameData.LatestRoom.Value].Assets["Wardrobe"].HidePrompt, 0)
+
+    fireproximityprompt(game.Workspace.CurrentRooms[game:GetService("ReplicatedStorage").GameData.LatestRoom.Value].Assets["Wardrobe"].HidePrompt, 1)
+
+end)
+
+local InfJack2 = game:GetService("RunService").RenderStepped:Connect(function()
+
+    fireproximityprompt(game.Workspace.CurrentRooms[game:GetService("ReplicatedStorage").GameData.LatestRoom.Value].Assets["Wardrobe"].HidePrompt, 0)
+
+    fireproximityprompt(game.Workspace.CurrentRooms[game:GetService("ReplicatedStorage").GameData.LatestRoom.Value].Assets["Wardrobe"].HidePrompt, 1)
+
+end)
+
+local InfJack3 = game:GetService("RunService").RenderStepped:Connect(function()
+
+    fireproximityprompt(game.Workspace.CurrentRooms[game:GetService("ReplicatedStorage").GameData.LatestRoom.Value].Assets["Wardrobe"].HidePrompt, 0)
+
+    fireproximityprompt(game.Workspace.CurrentRooms[game:GetService("ReplicatedStorage").GameData.LatestRoom.Value].Assets["Wardrobe"].HidePrompt, 1)
+
+end)
+
+local InfJack4 = game:GetService("RunService").RenderStepped:Connect(function()
+
+    fireproximityprompt(game.Workspace.CurrentRooms[game:GetService("ReplicatedStorage").GameData.LatestRoom.Value].Assets["Wardrobe"].HidePrompt, 0)
+
+    fireproximityprompt(game.Workspace.CurrentRooms[game:GetService("ReplicatedStorage").GameData.LatestRoom.Value].Assets["Wardrobe"].HidePrompt, 1)
+
+end)
+
+local InfJack5 = game:GetService("RunService").RenderStepped:Connect(function()
+
+    fireproximityprompt(game.Workspace.CurrentRooms[game:GetService("ReplicatedStorage").GameData.LatestRoom.Value].Assets["Wardrobe"].HidePrompt, 0)
+
+    fireproximityprompt(game.Workspace.CurrentRooms[game:GetService("ReplicatedStorage").GameData.LatestRoom.Value].Assets["Wardrobe"].HidePrompt, 1)
+
+end)
+
+wait(10)
+
+InfJack1:Disconnect()
+
+InfJack2:Disconnect()
+
+InfJack3:Disconnect()
+
+InfJack4:Disconnect()
+
+InfJack5:Disconnect()
+end)
 Tab8Section:NewButton("Figure[50]","Figure POV",function()
 game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace.CurrentRooms[50].FigureSetup.FigureRagdoll.Head.CFrame end)
     local Fov = 43 Camera = workspace.CurrentCamera Camera.FieldOfView = Fov
