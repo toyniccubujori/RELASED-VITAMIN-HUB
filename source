@@ -45,6 +45,18 @@ local Tab9 = window:NewTab("Troll")
 local Tab9Section = Tab8:NewSection("TROLL PEOPLE (VISIBLE TO ALL) ")
 ---Buttons
 
+Tab9Section:NewButton("Ambush Anticheat","",function()
+Game.ReplicatedStorage.EntityInfo.PreRunShop:FireServer({"Crucifix"})
+end)
+
+Tab1Section:NewButton("Lobby","Lobby You",function()
+game.ReplicatedStorage.EntityInfo.Lobby:FireServer()
+end)
+
+Tab1Section:NewButton("Play Again","Play again",function()
+game.ReplicatedStorage.EntityInfo.PlayAgain:FireServer()
+end)
+
 Tab9Section:NewButton("INFINITE JACK (NOT BY ME)","Visible to all",function()
 -- inf jack(use Anticheat Bypass)
 
