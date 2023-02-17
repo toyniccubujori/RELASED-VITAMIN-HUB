@@ -48,8 +48,6 @@ local Tab9Section = Tab8:NewSection("TROLL PEOPLE (VISIBLE TO ALL) ")
 Tab8Section:NewButton("Seek POV","SEEK POV",function()
 game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace:FindFirstChild("SeekMoving", true).SeekRig.Head.CFrame 
 end)
-game.Workspace.SeekMoving.SeekRig.Head.Transparency = 1
-end)
 
 Tab9Section:NewButton("Ambush Anticheat","",function()
 Game.ReplicatedStorage.EntityInfo.PreRunShop:FireServer({"Crucifix"})
