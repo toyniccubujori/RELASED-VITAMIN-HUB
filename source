@@ -50,8 +50,7 @@ game:GetService("RunService").RenderStepped:Connect(function() workspace.Current
 end)
 game.Workspace.SeekMoving.SeekRig.Head.Transparency = 1
 end)
-game.Workspace.SeekMoving.SeekRig.UpperTorso.Transparency = 1
-end)
+
 Tab9Section:NewButton("Ambush Anticheat","",function()
 Game.ReplicatedStorage.EntityInfo.PreRunShop:FireServer({"Crucifix"})
 end)
