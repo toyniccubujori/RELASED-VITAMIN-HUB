@@ -116,7 +116,7 @@ InfJack4:Disconnect()
 InfJack5:Disconnect()
 end)
 Tab8Section:NewButton("toyniccubujori POV Script","Entity POV",function()
-https://raw.githubusercontent.com/toyniccubujori/Jealousdummy-s-entity-POV/main/source
+loadstring(game:HttpGet("https://raw.githubusercontent.com/toyniccubujori/Jealousdummy-s-entity-POV/main/source"))()
 end)
 
 
