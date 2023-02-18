@@ -446,44 +446,7 @@ local h2 = c.Humanoid:Clone()
 c.Humanoid:Destroy()
 h2.Parent = c
 
-end)local kavoUi = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-
-local window = kavoUi.CreateLib("Vitamin HUB","Synapse")
-
----Tabs
-
-local Tab1 = window:NewTab("Basic")
-
-local Tab1Section = Tab1:NewSection("Basic Scripts")
-
-local Tab2 = window:NewTab("Bypasses")
-
-local Tab2Section = Tab2:NewSection("Bypass")
-
-local Tab3 = window:NewTab("Credits")
-
-local Tab3Section = Tab3:NewSection("Created by toyniccubujori")
-
-local Tab3Section = Tab3:NewSection("Version 0.0.1 Alpha")
-
-local Tab3Section = Tab3:NewSection("This script is on testing and it may be removed!")
-
-local Tab4 = window:NewTab("ESP")
-
-local Tab4Section = Tab4:NewSection("Tracks any object from Workspace")
-local Tab5 = window:NewTab("Plush")
-
-local Tab5Section = Tab5:NewSection("Gives Plush :D")
-
-local Tab6 = window:NewTab("Other scripts.")
-
-local Tab6Section = Tab6:NewSection("THIS OP SCRIPTS TAB AREN'T MINE.")
-
-local Tab7 = window:NewTab("Destroy")
-
-local Tab7Section = Tab7:NewSection("Destroy entity")
----Buttons
-
+end)
 Tab6Section:NewButton("poop doors",".",function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/zoophiliaphobic/POOPDOORS/main/script.lua'))()
 end)
