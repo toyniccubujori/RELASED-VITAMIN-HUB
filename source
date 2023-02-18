@@ -115,19 +115,10 @@ InfJack4:Disconnect()
 
 InfJack5:Disconnect()
 end)
-Tab8Section:NewButton("Figure[50]","Figure POV",function()
-game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace.CurrentRooms[50].FigureSetup.FigureRagdoll.Head.CFrame end)
-    local Fov = 43 Camera = workspace.CurrentCamera Camera.FieldOfView = Fov
-loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+Tab8Section:NewButton("toyniccubujori POV Script","Entity POV",function()
+https://raw.githubusercontent.com/toyniccubujori/Jealousdummy-s-entity-POV/main/source
 end)
 
-Tab8Section:NewButton("Figure[100]","Figure POV",function()
-game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace.CurrentRooms[100].FigureSetup.FigureRagdoll.Head.CFrame
-end)
-local Fov = 43 Camera = workspace.CurrentCamera Camera.FieldOfView = Fov
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
-end)
 
 Tab6Section:NewButton("PoopDoors V2","???",function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/mstudio45/poopdoors_edited/main/poopdoors_edited.lua'),true))()
