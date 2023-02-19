@@ -42,7 +42,7 @@ local Tab8 = window:NewTab("POV")
 local Tab8Section = Tab8:NewSection("POINT OF VIEW AN ENTITY (Must use fixcam on infinite yield to work!")
 local Tab9 = window:NewTab("Troll")
 
-local Tab9Section = Tab8:NewSection("TROLL PEOPLE (VISIBLE TO ALL) ")
+local Tab9Section = Tab9:NewSection("TROLL PEOPLE (VISIBLE TO ALL) ")
 ---Buttons
 
 
