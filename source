@@ -45,14 +45,30 @@ local Tab9 = window:NewTab("Troll")
 local Tab9Section = Tab9:NewSection("TROLL PEOPLE (VISIBLE TO ALL) ")
 ---Buttons
 
-Tab1Section:NewToggle("Speed", "Speed", function(state)
+Tab1Section:NewToggle("Fatal Death", "Oof", function(state)
     if state then
-local WalkSpeed16 = Game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
-if WalkSpeed16 == 16 do
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 21
-end
+
+        game.Players.LocalPlayer.Character.Humanoid.Health = 90
+wait(0.1)
+game.Players.LocalPlayer.Character.Humanoid.Health = 80
+wait(0.1)
+game.Players.LocalPlayer.Character.Humanoid.Health = 70
+wait(0.1)
+game.Players.LocalPlayer.Character.Humanoid.Health = 60
+wait(0.1)
+game.Players.LocalPlayer.Character.Humanoid.Health = 50
+wait(0.1)
+game.Players.LocalPlayer.Character.Humanoid.Health = 40
+wait(0.1)
+game.Players.LocalPlayer.Character.Humanoid.Health = 30
+wait(0.1)
+game.Players.LocalPlayer.Character.Humanoid.Health = 20
+wait(0.1)
+game.Players.LocalPlayer.Character.Humanoid.Health = 10
+wait(0.1)
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
     else
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+        game.Players.LocalPlayer.Character.Humanoid.Health = 100
     end
 end)
 Tab9Section:NewButton("Ambush Anticheat","",function()
