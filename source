@@ -45,7 +45,13 @@ local Tab9 = window:NewTab("Troll")
 local Tab9Section = Tab9:NewSection("TROLL PEOPLE (VISIBLE TO ALL) ")
 ---Buttons
 
-
+Tab1Section:NewToggle("Speed", "Speed", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 21
+    else
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    end
+end)
 Tab9Section:NewButton("Ambush Anticheat","",function()
 Game.ReplicatedStorage.EntityInfo.PreRunShop:FireServer({"Crucifix"})
 end)
