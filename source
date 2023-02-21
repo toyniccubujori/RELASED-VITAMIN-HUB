@@ -47,8 +47,10 @@ local Tab9Section = Tab9:NewSection("TROLL PEOPLE (VISIBLE TO ALL) ")
 
 Tab1Section:NewToggle("Speed", "Speed", function(state)
     if state then
+while true do
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 21
     else
+while true do
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
     end
 end)
