@@ -480,34 +480,14 @@ coroutine.resume(Rejoin)
 game.Players.LocalPlayer:Kick("Secure Rejoin!")
 end)
 
-Tab1Section:NewButton("Normal Speed","16",function()
-
+Tab1Section:NewToggle("Speed", "Working speed", function(state)
+    if state then
+        while true do
+Game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 21
+    else
+                while true do
 Game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
-
-end)
-
-Tab1Section:NewButton("24 Speed","24",function()
-
-Game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 24
-
-end)
-
-Tab1Section:NewButton("32 Speed","32",function()
-
-Game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 32
-
-end)
-
-Tab1Section:NewButton("64 Speed","64",function()
-
-Game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 64
-
-end)
-
-Tab1Section:NewButton("100 Speed","100",function()
-
-Game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
-
+    end
 end)
 
 Tab1Section:NewButton("Kill","Sets Health to 0",function()
