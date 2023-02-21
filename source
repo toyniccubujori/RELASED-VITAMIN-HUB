@@ -483,6 +483,7 @@ end)
 Tab1Section:NewToggle("Speed", "Working speed", function(state)
     if state then
 Game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 21
+end
     else
 Game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
     end
