@@ -51,9 +51,7 @@ while true do
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 21
 end
     else
-while true do
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
-end
     end
 end)
 Tab9Section:NewButton("Ambush Anticheat","",function()
