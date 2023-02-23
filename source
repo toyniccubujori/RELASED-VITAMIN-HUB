@@ -1,3 +1,7 @@
+game:GetService("ProximityPromptService").PromptButtonHoldBegan:Connect(function(p)
+				fireproximityprompt(p)
+			end)
+wait(1)
 local kavoUi = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
 
 local window = kavoUi.CreateLib("Vitamin HUB","Synapse")
@@ -45,10 +49,7 @@ local Tab9 = window:NewTab("Troll")
 local Tab9Section = Tab9:NewSection("TROLL PEOPLE (VISIBLE TO ALL) ")
 ---Buttons
 
-Tab9Section:NewButton("Instant interaction","",function()
-game:GetService("ProximityPromptService").PromptButtonHoldBegan:Connect(function(p)
-				fireproximityprompt(p)
-			end)
+
 
 Tab4Section:NewButton("A120","",function()
 local function findKey(model)
