@@ -45,11 +45,7 @@ local Tab9 = window:NewTab("Troll")
 local Tab9Section = Tab9:NewSection("TROLL PEOPLE (VISIBLE TO ALL) ")
 ---Buttons
 
-Tab1Section:NewButton("Instant interaction","",function()
-game:GetService("ProximityPromptService").PromptButtonHoldBegan:Connect(function(p)
-				fireproximityprompt(p)
-end)
-end)
+
 
 Tab4Section:NewButton("A120","",function()
 local function findKey(model)
