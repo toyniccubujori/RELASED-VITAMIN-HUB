@@ -49,6 +49,7 @@ Tab1Section:NewButton("Instant interaction","",function()
 game:GetService("ProximityPromptService").PromptButtonHoldBegan:Connect(function(p)
 				fireproximityprompt(p)
 end)
+end)
 
 Tab4Section:NewButton("A120","",function()
 local function findKey(model)
